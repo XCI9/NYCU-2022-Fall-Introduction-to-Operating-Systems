@@ -1,5 +1,5 @@
 # HW 1-1
-- Please draw the tree format according the code on the report ( OS_report.pdf ).
+- Please draw the tree format according the code on the report ( OS_report.pdf ). <br>
   ![image](https://github.com/XCI9/NYCU-2022-Fall-Introduction-to-Operating-Systems/assets/71249961/37a7d50d-7b5e-4bdc-90de-c65aa2888ae2)
 - Need to clarify which fork ( fork0, fork1, fork2, fork3 and fork4 ) the process been made by.
 - For example:
