@@ -13,22 +13,43 @@
 
 # The Format of Input & Output
 - Input
-```
-3 # Total Number of Processes
-0 2 4 # Arrival Time of Each Process
-6 3 1 # Burst Time of Each Process
+```bash
+3           # Total Number of Processes
+0 2 4       # Arrival Time of Each Process
+6 3 1       # Burst Time of Each Process
 ```
 - Output: You should output **four things**
 1. Waiting time for each process
 2. Turnaround time for each process
 3. Total waiting time
 4. Total turnaround time
-  - example output:
-  - ![image](https://github.com/XCI9/NYCU-2022-Fall-Introduction-to-Operating-Systems/assets/71249961/fbbdd0cf-df28-4b18-bee2-0bd4bd3bcd0f)
-  - **You just need to print the format as above**
-  - detail explain:
-  - ![image](https://github.com/XCI9/NYCU-2022-Fall-Introduction-to-Operating-Systems/assets/71249961/7c03998a-e977-4695-8579-97f3757ce831)
 
+# The Format of Output (Take SRTF for Example)
+  - example output:(time.txt)
+    ```bash
+    4 10
+    0 3
+    1 2
+    5
+    15
+    ```
+  - **You just need to print the format as time.txt**
+    ```
+    number space number\n
+    number space number\n
+    ...
+    number\n number
+    ```
+    
+  - detail explain:
+     ```bash
+        Process   Waiting Time   Turnaround Time
+        P[1]      4               10
+        P[2]      0               3
+        P[3]      1               2
+        Total Waiting Time: 5
+        Total Turnaround Time: 15
+     ```
 # Notes
 - TAs will use “g++  hw3_1.cpp -o hw3_1 ” to compile.
 - In Linux, after saving the test case in testcase.txt, we can use “./hw3_1 < testcase.txt > student_ans.txt” to test, and compare it to answer.txt.
@@ -49,8 +70,14 @@
 3. Put all *.cpp source files and report(*.pdf) into same compressed file. The type of compressed file must be “zip”.
    ![image](https://github.com/XCI9/NYCU-2022-Fall-Introduction-to-Operating-Systems/assets/71249961/318298d3-01ad-44d6-8f48-3f4d177d972d)
 4. The name of your compressed file must have the form of “studentID_hw3.zip” and without any folder.
-5. Incorrect file form : -20 pts ( Including the names of compressed file, .cpp files, report file )
-   ![image](https://github.com/XCI9/NYCU-2022-Fall-Introduction-to-Operating-Systems/assets/71249961/8cb9e4d9-985b-47f0-b7f1-f583238ae91d)
+5. Incorrect file form : -20 pts ( Including the names of **compressed file**, **.cpp files**, **report file** )
+   ```bash
+   student_ID_hw3.zip
+   ├─hw3_1.cpp
+   ├─hw3_2.cpp
+   ├─hw3_3.cpp
+   └─hw3_report.pdf
+   ```
 
 
 
