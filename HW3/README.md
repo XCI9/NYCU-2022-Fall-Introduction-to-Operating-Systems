@@ -11,7 +11,21 @@
 - Waiting Time: Total time spent by the process in the ready queue.
 - Response Time: The time spent when the process is being submission and gets the CPU for the first time.
 
-# The Format of Input & Output
+# Shortest Remaining Time First Scheduling (SRTF)
+- Example
+![image](https://github.com/XCI9/NYCU-2022-Fall-Introduction-to-Operating-Systems/assets/71249961/d334def0-de8a-415e-a6e8-e814fac7d193)
+
+|Process|Arrival|CPU burst|
+|:-----:|:-----:|:-------:|
+|1|0|6|
+|2|2|3|
+|3|4|1|
+- Waiting Time P1 = 4, P2 = 0, P3 = 1
+- Total Waiting Time \[ 4 + 0 + 1 ] = 5
+- Turnaround Time P1 = 10, P2 = 3, P3 = 2
+- Total Turnaround time \[ 10 + 3 + 2 ] = 15
+
+## The Format of Input & Output
 - Input
 ```bash
 3           # Total Number of Processes
