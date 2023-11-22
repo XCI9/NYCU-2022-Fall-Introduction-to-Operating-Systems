@@ -1,8 +1,32 @@
-# HW2 Multi-Threading Programming
+## APIs
+- Thread management: <pthread.h>
+  - pthread_create
+  -	pthread_join 
+  -	pthread_exit
+-	Reference:
+[POSIX Threads Programming | LLNL HPC Tutorials](https://hpc-tutorials.llnl.gov/posix/)
+
+## Exercise - Single-threading
+```console
+$  g++ hello_thread.cpp -lpthread -o hello_thread
+$ ./hello_thread
+Child Pthread ID - 0x16b93f000
+Master Pthread ID - 0x104814580
+Master
+Child
+Master
+Child
+Master
+Child
+```
+
+## Homework - MultiThreading
 
 - Use multithreading to do matrix calculation problems
 - Find the best thread quantity between 2 ~ 20
-- Output the sum of every element of your matrices
+- Output the **sum of every element** of your matrices
+- ![image](https://github.com/XCI9/NYCU-2022-Fall-Introduction-to-Operating-Systems/assets/71249961/a8326f82-95ed-4324-b4d0-c6b7b7b0f052)
+
 
 - You should implement:
   1. STDIN(e.g. scanf, cin)
@@ -22,8 +46,18 @@
   - You should run your code on the multiple CPU
 - Performance between single-thread and multi-thread:
   - use $ time ./filename” to check the execution time
-  - ![image](https://github.com/XCI9/NYCU-2022-Fall-Introduction-to-Operating-Systems/assets/71249961/8024b334-9154-402d-9a46-34ff909e501f)
-  - ![image](https://github.com/XCI9/NYCU-2022-Fall-Introduction-to-Operating-Systems/assets/71249961/dde2ef81-30a7-429b-8237-238a9118e726)
+  ```console
+  $ time ./ST >STout.txt
+  real 0m0.721s
+  user 0m0.709s
+  sys  0m0.012s
+  ```
+  ```console
+  $ time ./ST >STout.txt
+  real 0m0.335s
+  user 0m1.074s
+  sys  0m0.047s
+  ```
  
 ### Speed up
 - Compare the real time between single thread and the multi thread
