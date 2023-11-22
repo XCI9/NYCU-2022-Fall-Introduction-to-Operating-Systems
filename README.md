@@ -1,5 +1,6 @@
 # NYCU-2022-Fall-Introduction-to-Operating-Systems
-111-1 作業系統概論 蔡文錦教授
+111-1 作業系統概論 蔡文錦教授<br/>
+[課綱](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=111&Sem=1&CrsNo=515522&lang=zh-tw)
 
 - 分數計算
   - 小考 15% 共4次
